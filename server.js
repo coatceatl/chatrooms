@@ -6,7 +6,7 @@ var cache = {};
 
 function send404(response) {
   response.writeHead(404, {'Content-Type': 'text/plain'});
-  response.write('Error 404: resourse not found');
+  response.write('Error 404: resource not found');
   response.end();
 }
 
@@ -51,7 +51,7 @@ var server = http.createServer(function(request, response) {
 });
 
 server.listen(3000, function() {
-  console.log('Server listening on port 3000');
+  console.log('Server listening on port 3000.');
 });
 
 var chatServer = require('./lib/chat_server');
